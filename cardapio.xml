@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cardapio>
+    <prato id="C01">
+        <nome>Pasta Italiana</nome>
+        <descricao>Palha de origem italiana</descricao>
+        <igredientes> leite condensado, creme de leite fresco,chocolate meio amargo,margarina,biscoitos Maizena e açúcar de confeiteiro</igredientes>
+        <preco>5R$</preco>
+        <calorias>254kcal</calorias>
+        <tempoPreparo>20min</tempoPreparo>
+    </prato>
+
+    <prato id="C02">
+        <nome>Cuscuz</nome>
+        <descricao>Cuscuz de origem "nordestina" kkk</descricao>
+        <igredientes> Flocão, Sal e agua</igredientes>
+        <preco>ImpagavelR$</preco>
+        <calorias>112kcal</calorias>
+        <tempoPreparo>15min</tempoPreparo>
+    </prato>
+
+    <prato id="C03">
+        <nome>Estrogonofe de Frango</nome>
+        <descricao>prato originário da culinária russa</descricao>
+        <igredientes>Frango, tompero, molho de tomate, creme de leite, mostarda,  Ketchup,  molho inglês e cebola e alho</igredientes>
+        <preco>18R$</preco>
+        <calorias>98kcal</calorias>
+        <tempoPreparo>20min</tempoPreparo>
+    </prato>
+
+    <prato id="C04">
+        <nome>lasanha de frango</nome>
+        <descricao>Uma boa opção para o almoço de domingo com a familia</descricao>
+        <igredientes>Frango, tompero, molho de tomate, creme de leite, molho branco, massa, queijo, presunto e cebola e alho</igredientes>
+        <preco>80R$</preco>
+        <calorias>160kcal</calorias>
+        <tempoPreparo>60min</tempoPreparo>
+    </prato>
+
+    <prato id="C05">
+        <nome>Feijoada</nome>
+        <descricao>Outra boa opção para fazer no almoço de domingo</descricao>
+        <igredientes>cebola e alho, feijao, carne e calabresa</igredientes>
+        <preco>15R$</preco>
+        <calorias>200kcal</calorias>
+        <tempoPreparo>40min</tempoPreparo>
+    </prato>
+</cardapio>
