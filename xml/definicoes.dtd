@@ -1,4 +1,4 @@
-<!ELEMENT cardapio (prato+) >
+<!ELEMENT imobiliaria (imovel+) >
 <!ELEMENT prato (nome,descricao,ingredientes,preco,calorias,tempoPreparo) >
 <!ATTLIST prato id ID #REQUIRED>
 <!ELEMENT ingredientes (ingrediente+)>

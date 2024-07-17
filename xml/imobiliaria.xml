@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE imobiliaria [
+<!ELEMENT imobiliaria (imovel+) >
+<!ELEMENT imovel (descricao,proprietario,endereco,caracteristicas,valor)>
+<!ELEMENT proprietario (nome, (email | telefone)+)>
+<!ELEMENT endereco (rua, bairro, cidade, numero?)>
+<!ELEMENT caracteristicas (tamanho, numQuartos, numBanheiros)>
+
+<!ELEMENT descricao (#PCDATA)>
+<!ELEMENT valor (#PCDATA)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT telefone (#PCDATA)>
+<!ELEMENT rua (#PCDATA)>
+<!ELEMENT bairro (#PCDATA)>
+<!ELEMENT cidade (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT tamanho (#PCDATA)>
+<!ELEMENT numQuartos (#PCDATA)>
+<!ELEMENT numBanheiros (#PCDATA)>
+
+]>
+
+<imobiliaria>
+    <imovel>
+        <descricao>Um belo imovel</descricao>
+        <proprietario>
+            <nome>Lucas</nome>
+            <email>Lucas@gmail</email>
+            <telefone>849960177</telefone>
+            <telefone>849960144</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Los angels</rua>
+            <bairro>Ayrton sena</bairro>
+            <cidade>Natal</cidade>
+            <numero>45</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>100mQuadrados</tamanho>
+            <numQuartos>3</numQuartos>
+            <numBanheiros>2</numBanheiros>
+        </caracteristicas>
+        <valor>10000</valor>
+    </imovel>
+
+    <imovel>
+        <descricao>Um belo imovel 2 </descricao>
+        <proprietario>
+            <nome>pedro</nome>
+            <email>pedro@gmail</email>
+            <telefone>849970177</telefone>
+            <telefone>849970144</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Cafe e cafe</rua>
+            <bairro>juremal</bairro>
+            <cidade>spp</cidade>
+            <numero>61</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>300m</tamanho>
+            <numQuartos>3</numQuartos>
+            <numBanheiros>2</numBanheiros>
+        </caracteristicas>
+        <valor>10000</valor>
+    </imovel>
+
+    <imovel>
+        <descricao>Um imovel grande</descricao>
+        <proprietario>
+            <nome>camila</nome>
+            <telefone>849680144</telefone>
+        </proprietario>
+        <endereco>
+            <rua>berguin</rua>
+            <bairro>camarao</bairro>
+            <cidade>Natal</cidade>
+            <numero>55</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>900mQuadrados</tamanho>
+            <numQuartos>6</numQuartos>
+            <numBanheiros>3</numBanheiros>
+        </caracteristicas>
+        <valor>12000</valor>
+    </imovel>
+
+    <imovel>
+        <descricao>Um imovel pequeno</descricao>
+        <proprietario>
+            <nome>Andre</nome>
+            <email>andre@gmail</email>
+            <telefone>849960177</telefone>
+            <telefone>849960144</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Los angels</rua>
+            <bairro>Ayrton sena</bairro>
+            <cidade>Natal</cidade>
+            <numero>17</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>100mQuadrados</tamanho>
+            <numQuartos>3</numQuartos>
+            <numBanheiros>2</numBanheiros>
+        </caracteristicas>
+        <valor>10000</valor>
+
+    </imovel>
+
+    <imovel>
+        <descricao>Um imovel pequeno</descricao>
+        <proprietario>
+            <nome>Andreia</nome>
+            <email>andreia@gmail</email>
+            <telefone>849960177</telefone>
+        </proprietario>
+        <endereco>
+            <rua>juremal</rua>
+            <bairro>juremal</bairro>
+            <cidade>Natal</cidade>
+        </endereco>
+        <caracteristicas>
+            <tamanho>50mQuadrados</tamanho>
+            <numQuartos>1</numQuartos>
+            <numBanheiros>1</numBanheiros>
+        </caracteristicas>
+        <valor>1000</valor>
+
+    </imovel>
+</imobiliaria>
