@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE quiz SYSTEM "quiz.dtd">
+
+<quiz versao="3">
+    <disciplina>Pos</disciplina>
+    <professor>
+        <nome>Diego</nome>
+        <matrícula>121212</matrícula>
+    </professor>
+    <turma>InfoWeb 4v</turma>
+    <data>19 de julho</data>
+    <questões>
+        <questão>
+            <enunciado>sei la</enunciado>
+            <pontuação>50</pontuação>
+            <alternativas>
+                <alternativa correta="sim">A</alternativa>
+                <alternativa correta="nao">B</alternativa>
+                <alternativa correta="nao">C</alternativa>
+                <alternativa correta="nao">D</alternativa>
+            </alternativas>
+        </questão>
+
+
+        <questão>
+            <enunciado>sei la2</enunciado>
+            <pontuação>50</pontuação>
+            <alternativas>
+                <alternativa correta="nao">A</alternativa>
+                <alternativa correta="nao">B</alternativa>
+                <alternativa correta="sim">C</alternativa>
+                <alternativa correta="nao">D</alternativa>
+            </alternativas>
+        </questão>
+
+        <questão>
+            <enunciado>sei la3</enunciado>
+            <pontuação>50</pontuação>
+            <alternativas>
+                <alternativa correta="sim">A</alternativa>
+                <alternativa correta="nao">B</alternativa>
+                <alternativa correta="nao">C</alternativa>
+                <alternativa correta="nao">D</alternativa>
+            </alternativas>
+        </questão>
+
+        <questão>
+            <enunciado>sei la4</enunciado>
+            <pontuação>50</pontuação>
+            <alternativas>
+                <alternativa correta="nao">A</alternativa>
+                <alternativa correta="sim">B</alternativa>
+                <alternativa correta="nao">C</alternativa>
+                <alternativa correta="nao">D</alternativa>
+            </alternativas>
+        </questão>
+
+        <questão>
+            <enunciado>sei la5</enunciado>
+            <pontuação>50</pontuação>
+            <alternativas>
+                <alternativa correta="nao">A</alternativa>
+                <alternativa correta="nao">B</alternativa>
+                <alternativa correta="sim">C</alternativa>
+                <alternativa correta="nao">D</alternativa>
+            </alternativas>
+        </questão>
+
+        <questão>
+            <enunciado>questao especial</enunciado>
+            <pontuação>50</pontuação>
+            <alternativas>
+                <alternativa correta="nao">A</alternativa>
+                <alternativa correta="nao">B</alternativa>
+                <alternativa correta="sim">C</alternativa>
+            </alternativas>
+        </questão>
+
+    </questões>
+</quiz>
