@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:l="http://quiz.org"  targetNamespace="http://quiz.org"
+  elementFormDefault="qualified">
+
+  <element name="disciplina" type="string"/>
+  <element name="nome" type="string"/>
+  <element name="matrícula" type="string"/>
+
+  <element name="professor">
+    <complexType>
+      <sequence>
+        <element ref="l:nome"/>  <element ref="l:matrícula" minOccurs="0"/>  </sequence>
+    </complexType>
+  </element>
+
+  <element name="turma" type="string"/>
+  <element name="data" type="string"/>
+
+  <element name="enunciado" type="string"/>
+  <element name="pontuação" type="string"/>
+
+  <simpleType name="corretaType">
+    <restriction base="string">
+      <enumeration value="sim"/>
+      <enumeration value="nao"/>
+    </restriction>
+  </simpleType>
+
+  <element name="alternativa">
+    <complexType>
+      <simpleContent>
+        <extension base="string">
+          <attribute name="correta" type="l:corretaType" use="required"/>  </extension>
+      </simpleContent>
+    </complexType>
+  </element>
+
+  <element name="alternativas">
+    <complexType>
+      <sequence>
+        <element ref="l:alternativa" maxOccurs="unbounded"/>  </sequence>
+    </complexType>
+  </element>
+
+  <element name="questão">
+    <complexType>
+      <sequence>
+        <element ref="l:enunciado"/>  <element ref="l:pontuação"/>  <element ref="l:alternativas"/>  </sequence>
+    </complexType>
+  </element>
+
+  <element name="questões">
+    <complexType>
+      <sequence>
+        <element ref="l:questão" maxOccurs="unbounded"/>  </sequence>
+    </complexType>
+  </element>
+
+  <element name="quiz">
+    <complexType>
+        <sequence>
+            <element ref="l:disciplina"/>  
+            <element ref="l:professor"/>  
+            <element ref="l:turma"/>  
+            <element ref="l:data"/>  
+            <element ref="l:questões"/> 
+        </sequence>
+      <attribute name="versao" type="string" use="required"/>
+    </complexType>
+  </element>
+
+</schema>
