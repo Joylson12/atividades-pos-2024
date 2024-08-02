@@ -1,0 +1,106 @@
+{
+    "cardapio": {
+      "prato": [
+        {
+          "id": "C01",
+          "nome": "Pasta Italiana",
+          "descricao": "Palha de origem italiana.",
+          "ingredientes": {
+            "ingrediente": [
+              "leite condensado",
+              "Creme de Leite Fresco",
+              "Chocolate meio amargo",
+              "margarina",
+              "biscoito Maizena",
+              "Açúcar de confeiteiro"
+            ]
+          },
+          "preco": "5R$",
+          "calorias": "250kcal",
+          "tempoPreparo": "20 min"
+        },
+
+        {
+            "id": "C02",
+            "nome": "Cuscuz",
+            "descricao": "Cuscuz de origem 'nordestina' kkk.",
+            "ingredientes": {
+              "ingrediente": [
+                "Flocão",
+                "sal",
+                "Agua"
+              ]
+            },
+            "preco": "0R$",
+            "calorias": "112kcal",
+            "tempoPreparo": "15 min"
+        },
+
+        {
+            "id": "C03",
+            "nome": "Estrogonofe de Frango",
+            "descricao": "prato originário da culinária russa.",
+            "ingredientes": {
+              "ingrediente": [
+                "Frango",
+                "tompero",
+                "molho de tomate",
+                "Creme de Leite",
+                "molho branco",
+                "mostarda",
+                "Ketchup",
+                "molho ingles",
+                "cebola",
+                "alho"
+              ]
+            },
+            "preco": "18R$",
+            "calorias": "98kcal",
+            "tempoPreparo": "20 min"
+        },
+
+        {
+            "id": "C04",
+            "nome": "Pasta Italiana",
+            "descricao": "Palha de origem italiana.",
+            "ingredientes": {
+              "ingrediente": [
+                "Frango",
+                "tompero",
+                "molho de tomate",
+                "Creme de Leite",
+                "molho branco",
+                "massa",
+                "queijo",
+                "presunto",
+                "cebola",
+                "Alho"
+              ]
+            },
+            "preco": "80R$",
+            "calorias": "160kcal",
+            "tempoPreparo": "60 min"
+        },
+
+        {
+            "id": "C05",
+            "nome": "Feijoada",
+            "descricao": "Outra boa opção para fazer no almoço de domingo.",
+            "ingredientes": {
+              "ingrediente": [
+                "cebola",
+                "alho",
+                "feijao",
+                "carne",
+                "calabresa"
+              ]
+            },
+            "preco": "15R$",
+            "calorias": "200kcal",
+            "tempoPreparo": "40 min"
+        }
+        
+    ]
+    }
+  }
+  
