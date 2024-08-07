@@ -1,0 +1,133 @@
+{
+    "quiz": {
+      "versao": "1.0",
+      "disciplina": "pos",
+      "professor": {
+        "nome": "Diego",
+        "matrícula": "121212"
+      },
+      "turma": "Infoweb 4v",
+      "data": "19 de julho",
+      "questões": {
+        "questão": [
+          {
+            "enunciado": "sei la",
+            "pontuação": "50",
+            "alternativas": {
+              "alternativa": [
+                {
+                  "correta": "sim",
+                  "valor": "A"
+                },
+                {
+                  "correta": "nao",
+                  "valor": "B"
+                },
+                {
+                  "correta": "nao",
+                  "valor": "C"
+                },
+                {
+                  "correta": "nao",
+                  "valor": "D"
+                }
+              ]
+            }
+          },
+          {
+            "enunciado": "sei la2",
+            "pontuação": "50",
+            "alternativas": {
+              "alternativa": [
+                {
+                  "correta": "nao",
+                  "valor": "A"
+                },
+                {
+                  "correta": "nao",
+                  "valor": "B"
+                },
+                {
+                  "correta": "sim",
+                  "valor": "C"
+                },
+                {
+                  "correta": "nao",
+                  "valor": "D"
+                }
+              ]
+            }
+          },
+          {
+            "enunciado": "sei la3",
+            "pontuação": "50",
+            "alternativas": {
+              "alternativa": [
+                {
+                  "correta": "sim",
+                  "valor": "A"
+                },
+                {
+                  "correta": "nao",
+                  "valor": "B"
+                },
+                {
+                  "correta": "nao",
+                  "valor": "C"
+                },
+                {
+                  "correta": "nao",
+                  "valor": "D"
+                }
+              ]
+            }
+          },
+          {
+            "enunciado": "sei la4",
+            "pontuação": "1 ponto",
+            "alternativas": {
+              "alternativa": [
+                {
+                  "correta": "nao",
+                  "valor": "A"
+                },
+                {
+                  "correta": "sim",
+                  "valor": "B"
+                },
+                {
+                  "correta": "nao",
+                  "valor": "C"
+                },
+                {
+                  "correta": "nao",
+                  "valor": "D"
+                }
+              ]
+            }
+          },
+          {
+            "enunciado": "sei la5",
+            "pontuação": "50",
+            "alternativas": {
+              "alternativa": [
+                {
+                  "correta": "sim",
+                  "valor": "A"
+                },
+                {
+                  "correta": "nao",
+                  "valor": "B"
+                },
+                {
+                  "correta": "sim",
+                  "valor": "C"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+  

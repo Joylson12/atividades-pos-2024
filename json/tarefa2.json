@@ -1,0 +1,121 @@
+{
+    "imobiliaria": {
+      "imovel": [
+        {
+          "descricao": "Um belo imovel",
+          "proprietario": {
+            "nome": "Lucas",
+            "email": "lucas@gmail",
+            "telefone": [
+              "849960177",
+              "849960144"
+            ]
+          },
+          "endereco": {
+            "rua": "Los angels",
+            "bairro": "Ayrton sena",
+            "cidade": "Natal",
+            "numero": "45"
+          },
+          "caracteristicas": {
+            "tamanho": "100mQuadrados",
+            "numQuartos": "3",
+            "numBanheiros": "2"
+          },
+          "valor": "10000"
+        },
+
+        {
+            "descricao": "Um belo imovel 2",
+            "proprietario": {
+              "nome": "Pedro",
+              "email": "pedro@gmail",
+              "telefone": [
+                "849970177",
+                "849970144"
+              ]
+            },
+            "endereco": {
+              "rua": "Cafe e cafe",
+              "bairro": "juremal",
+              "cidade": "spp",
+              "numero": "61"
+            },
+            "caracteristicas": {
+              "tamanho": "300m",
+              "numQuartos": "3",
+              "numBanheiros": "2"
+            },
+            "valor": "10000"
+          },
+
+          {
+            "descricao": "Um imovel grande",
+            "proprietario": {
+              "nome": "camila",
+              "telefone": [
+                "849680144"
+              ]
+            },
+            "endereco": {
+              "rua": "berguin",
+              "bairro": "camarao",
+              "cidade": "Natal",
+              "numero": "55"
+            },
+            "caracteristicas": {
+              "tamanho": "900mQuadrados",
+              "numQuartos": "6",
+              "numBanheiros": "2"
+            },
+            "valor": "12000"
+          },
+
+          {
+            "descricao": "Um belo imovel",
+            "proprietario": {
+              "nome": "Lucas",
+              "email": "lucas@gmail",
+              "telefone": [
+                "849960177",
+                "849960144"
+              ]
+            },
+            "endereco": {
+              "rua": "Los angels",
+              "bairro": "Ayrton sena",
+              "cidade": "Natal",
+              "numero": "17"
+            },
+            "caracteristicas": {
+              "tamanho": "100mQuadrados",
+              "numQuartos": "3",
+              "numBanheiros": "2"
+            },
+            "valor": "10000"
+          },
+
+          {
+            "descricao": "Um imovel pequeno",
+            "proprietario": {
+              "nome": "Andreia",
+              "email": "andreia@gmail",
+              "telefone": [
+                "849960177"
+              ]
+            },
+            "endereco": {
+              "rua": "juremal",
+              "bairro": "juremal",
+              "cidade": "Natal"
+            },
+            "caracteristicas": {
+              "tamanho": "50mQuadrados",
+              "numQuartos": "1",
+              "numBanheiros": "1"
+            },
+            "valor": "1000"
+            }
+        ]
+    }
+}
