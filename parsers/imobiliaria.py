@@ -8,7 +8,7 @@ for id, imovel in enumerate(imoveis, start=1):
 print()
 
 escolha = int(input("Escolha o número para ver os detalhes dos imoveis: "))
-imovelEscolhido = imoveis[escolha - 1]
+imovelEscolhido= imoveis[escolha - 1]
 descricao = imovelEscolhido["descricao"]
 proprietario = imovelEscolhido["proprietario"]
 telefone = proprietario["telefone"]

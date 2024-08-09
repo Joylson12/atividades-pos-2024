@@ -27,3 +27,5 @@ print(f"Ingredientes:")
 print(f"Preço do Prato: {precoPrato}")
 print(f"Calorias do Prato: {caloriasPrato} Kilocaloria")
 print(f"Tempo de Preparo: {tempoPreparo}")
+
+
