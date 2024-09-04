@@ -51,7 +51,7 @@ while True:
         if response.status_code == 204:
             print(f"Certo! {user} deixou de sguir:  {usuario}.")
         else:
-            print(f"Erro ao parar de seguir o usuário: {response.status_code}")
+            print(f"Erro! Não parou de seguir: {response.status_code}")
 
     elif opcao == '4':
         print("Valeu")
