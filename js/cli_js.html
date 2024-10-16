@@ -76,12 +76,12 @@
 
         async function loadPokemons() {
             try {
-                const url = 'https://pokeapi.co/api/v2/pokemon?limit=100'; // Carregar mais Pokémon para facilitar a paginação
+                const url = 'https://pokeapi.co/api/v2/pokemon?limit=100';
                 const response = await fetch(url);
                 const data = await response.json();
                 allPokemons = data.results; 
 
-                currentPage = 1; // Resetar para a primeira página
+                currentPage = 1;
                 displayPokemons();
             } catch (error) {
                 console.error('Erro ao buscar os Pokémon:', error);
@@ -135,7 +135,7 @@
 
             Promise.all(filteredPokemons).then(results => {
                 allPokemons = results.filter(Boolean);
-                currentPage = 1; // Resetar para a primeira página
+                currentPage = 1;
                 displayPokemons();
             });
         }
