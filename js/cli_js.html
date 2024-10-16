@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex do Jowl - PokeAPI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e8f5e9;
+            font-family: 'Arial', sans-serif;
+        }
+        h1 {
+            color: #E03C31;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        .pokemon-card {
+            background: #388e3c;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            margin: 10px 0;
+        }
+        .pokemon-card:hover {
+            transform: scale(1.02);
+        }
+        .pokemon-name {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #e8f5e9;
+        }
+        .filter-section {
+            margin: 20px 0;
+        }
+        .filter-section label {
+            font-weight: bold;
+            color: #388e3c;
+        }
+        .btn-success {
+            background-color: #E02C31;
+            border-color: #E03C31;
+        }
+        .btn-success:hover {
+            background-color: #e04c31;
+        }
+        @media (max-width: 768px) {
+            .pokemon-card {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Pokédex do Jowl</h1>
+
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button id="load-pokemons-btn" class="btn btn-success btn-lg">Carregar Todos os Pokémons</button>
+        </div>
+
+        <div class="mt-4" id="pokemon-container"></div>
+        <div class="d-flex justify-content-center mt-4">
+            <button id="prev-btn" class="btn btn-success" onclick="changePage(-1)" disabled>Anterior</button>
+            <button id="next-btn" class="btn btn-success" onclick="changePage(1)" disabled>Próximo</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        let allPokemons = [];
+        let currentPage = 1;
+        const pokemonsPerPage = 10;
+
+        async function loadPokemons() {
+            try {
+                const url = 'https://pokeapi.co/api/v2/pokemon?limit=100'; // Carregar mais Pokémon para facilitar a paginação
+                const response = await fetch(url);
+                const data = await response.json();
+                allPokemons = data.results; 
+
+                currentPage = 1; // Resetar para a primeira página
+                displayPokemons();
+            } catch (error) {
+                console.error('Erro ao buscar os Pokémon:', error);
+                alert('Não foi possível carregar os Pokémon.');
+            }
+        }
+
+        async function createPokemonCard(pokemon) {
+            const response = await fetch(pokemon.url);
+            const pokemonData = await response.json();
+
+            const pokemonContainer = document.getElementById('pokemon-container');
+            const card = document.createElement('div');
+            card.className = 'pokemon-card p-3';
+
+            card.innerHTML = `
+                <div class="pokemon-name">${pokemonData.name}</div>
+                <p><strong>Altura:</strong> ${pokemonData.height} decímetros</p>
+                <p><strong>Peso:</strong> ${pokemonData.weight} hectogramas</p>
+                <p><strong>Tipos:</strong> ${pokemonData.types.map(type => type.type.name).join(', ')}</p>
+                <p><strong>Habilidades:</strong> ${pokemonData.abilities.map(ability => ability.ability.name).join(', ')}</p>
+            `;
+
+            pokemonContainer.appendChild(card);
+        }
+
+        function displayPokemons() {
+            const pokemonContainer = document.getElementById('pokemon-container');
+            pokemonContainer.innerHTML = '';
+
+            const start = (currentPage - 1) * pokemonsPerPage;
+            const end = start + pokemonsPerPage;
+
+            const paginatedPokemons = allPokemons.slice(start, end);
+
+            paginatedPokemons.forEach(createPokemonCard);
+
+            document.getElementById('prev-btn').disabled = currentPage === 1;
+            document.getElementById('next-btn').disabled = end >= allPokemons.length;
+        }
+
+        function filterPokemons() {
+            const selectedType = document.getElementById('type-filter').value;
+            const filteredPokemons = selectedType 
+                ? allPokemons.filter(pokemon => {
+                    return fetch(pokemon.url)
+                        .then(res => res.json())
+                        .then(data => data.types.some(type => type.type.name === selectedType));
+                })
+                : allPokemons;
+
+            Promise.all(filteredPokemons).then(results => {
+                allPokemons = results.filter(Boolean);
+                currentPage = 1; // Resetar para a primeira página
+                displayPokemons();
+            });
+        }
+
+        function changePage(direction) {
+            currentPage += direction;
+            displayPokemons();
+        }
+
+        document.getElementById('load-pokemons-btn').addEventListener('click', loadPokemons);
+    </script>
+
+</body>
+</html>
