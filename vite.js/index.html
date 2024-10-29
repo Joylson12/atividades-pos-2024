@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex do Jowl - PokeAPI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e8f5e9;
+            font-family: 'Arial', sans-serif;
+        }
+        h1 {
+            color: #E03C31;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        .pokemon-card {
+            background: #388e3c;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            margin: 10px 0;
+        }
+        .pokemon-card:hover {
+            transform: scale(1.02);
+        }
+        .pokemon-name {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #e8f5e9;
+        }
+        .filter-section {
+            margin: 20px 0;
+        }
+        .filter-section label {
+            font-weight: bold;
+            color: #388e3c;
+        }
+        .btn-success {
+            background-color: #E02C31;
+            border-color: #E03C31;
+        }
+        .btn-success:hover {
+            background-color: #e04c31;
+        }
+        @media (max-width: 768px) {
+            .pokemon-card {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Pokédex do Jowl</h1>
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button id="load-pokemons-btn" class="btn btn-success btn-lg">Carregar Todos os Pokémons</button>
+        </div>
+
+        <div class="mt-4" id="pokemon-container"></div>
+        <div class="d-flex justify-content-center mt-4">
+            <button id="prev-btn" class="btn btn-success" disabled>Anterior</button>
+            <button id="next-btn" class="btn btn-success" disabled>Próximo</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
