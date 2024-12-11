@@ -1,0 +1,43 @@
+
+        body {
+            background-color: #e8f5e9;
+            font-family: 'Arial', sans-serif;
+        }
+        h1 {
+            color: #E03C31;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        .pokemon-card {
+            background: #388e3c;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            margin: 10px 0;
+        }
+        .pokemon-card:hover {
+            transform: scale(1.02);
+        }
+        .pokemon-name {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #e8f5e9;
+        }
+        .filter-section {
+            margin: 20px 0;
+        }
+        .filter-section label {
+            font-weight: bold;
+            color: #388e3c;
+        }
+        .btn-success {
+            background-color: #E02C31;
+            border-color: #E03C31;
+        }
+        .btn-success:hover {
+            background-color: #e04c31;
+        }
+        @media (max-width: 768px) {
+            .pokemon-card {
+                margin: 10px;
+            }
+        }
